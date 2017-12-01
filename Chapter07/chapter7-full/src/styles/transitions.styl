@@ -1,0 +1,78 @@
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .15s linear;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.zoom-enter-active,
+.zoom-leave-active {
+  transform-origin: center center;
+  transition: transform .15s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.zoom-enter,
+.zoom-leave-to {
+  transform: scale(0);
+}
+
+.right-pane-enter-active,
+.right-pane-leave-active,
+.left-pane-enter-active,
+.left-pane-leave-active
+  > .background
+    transition opacity .3s linear
+
+  > .pane
+    transition transform .8s cubic-bezier(0, 1, 0, 1)
+
+.right-pane-enter-active,
+.left-pane-enter-active
+  > .pane >
+    .header
+      transition transform .6s cubic-bezier(0, 1, 0, 1) .1s
+
+    .content
+      transition transform .8s cubic-bezier(0, 1, 0, 1) .2s
+
+    .footer
+      transition transform .8s cubic-bezier(0, 1, 0, 1) .3s
+
+.right-pane-leave-active,
+.left-pane-leave-active
+  pointer-events none
+
+.right-pane-enter,
+.right-pane-leave-to,
+.left-pane-enter,
+.left-pane-leave-to
+  > .background
+    opacity 0
+
+.right-pane-enter,
+.right-pane-leave-to
+  > .pane
+    transform translateX(100%)
+
+.left-pane-enter,
+.left-pane-leave-to
+  > .pane
+    transform translateX(-100%)
+
+.right-pane-enter
+  > .pane >
+    .header,
+    .content,
+    .footer
+      transform translateX(100%)
+
+.left-pane-enter
+  > .pane >
+    .header,
+    .content,
+    .footer
+      transform translateX(-100%)

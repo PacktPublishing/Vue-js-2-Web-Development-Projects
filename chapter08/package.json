@@ -1,0 +1,15 @@
+{
+  "name": "chapter8-full",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.20.0",
+    "meteor-node-stubs": "~0.2.4",
+    "vue": "^2.5.8",
+    "vue-meteor-tracker": "^1.2.3",
+    "vue-progress-path": "0.0.2",
+    "vue-router": "^3.0.1"
+  }
+}

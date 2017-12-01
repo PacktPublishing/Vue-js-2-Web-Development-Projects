@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Notebook</title>
+  <!-- Icons & Stylesheets -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Include the library in the page -->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/marked"></script>
+
+  <!-- Notebook app -->
+  <div id="notebook">
+
+    <!-- Main pane -->
+    <section class="main">
+      <textarea v-model="content"></textarea>
+    </section>
+
+    <!-- Preview pane -->
+    <aside class="preview" v-html="notePreview">
+    </aside>
+
+  </div>
+
+  <!-- Some JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

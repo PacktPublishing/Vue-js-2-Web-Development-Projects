@@ -1,0 +1,35 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Castle Duel</title>
+  <!-- Icons & Stylesheets -->
+  <link href="https://fonts.googleapis.com/css?family=Signika+Negative:600" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="transitions.css" />
+</head>
+<body>
+  <!-- Include the library in the page -->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- This library will be useful for animations -->
+  <script src="https://unpkg.com/tween.js"></script>
+
+  <!-- Game app -->
+  <div id="app"></div>
+
+  <!-- Templates -->
+  <script type="text/x-template" id="banner">
+    <svg viewBox="0 0 20 260">
+      <path :d="`m 0,0 20,0 0,${height} -10,-10 -10,10 z`" :style="`fill:${color};stroke:none;`" />
+    </svg>
+  </script>
+
+  <!-- Scripts -->
+  <script src="utils.js"></script>
+  <script src="cards.js"></script>
+  <script src="state.js"></script>
+  <script src="components/ui.js"></script>
+  <script src="components/world.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+$color-primary = #44b682
+
+body
+  margin 0
+  font-family 'Roboto', sans-serif
+
+a
+  color $color-primary
+  text-decoration none
+
+button,
+input,
+textarea
+  font-size inherit
+  font-family inherit
+  border none
+  outline none
+  padding 6px 12px
+
+button
+  background $color-primary
+  color white
+  border-radius 3px
+  cursor pointer
+
+  &:hover
+    background lighten($color-primary, 20%)
+
+  &:active
+    background darken($color-primary, 20%)
+
+h1
+  font-weight normal
+  padding-left 24px
+
+nav
+  background $color-primary
+  padding 24px
+
+  a
+    color white
+    display inline-block
+    padding 6px 12px
+    border-radius 3px
+
+    &.router-link-active
+      background white
+      color $color-primary
+
+.actions
+  padding 0 24px
+
+.production-dashboard
+  .indicators
+    display flex
+    justify-content center
+    margin-bottom 42px
+
+  .list
+    display flex
+    flex-direction column
+    padding 24px
+
+    > div
+      display flex
+      padding 16px 0
+
+      &:not(:last-child)
+        border-bottom 2px solid #eee
+
+      &:hover
+        background rgba($color-primary, .03)
+
+      > div
+        flex 30% 1 1
+        padding 0 16px
+
+      .value
+        text-align right
+
+      .error
+        color red
+
+      .date
+        color rgba(black, .7)
+
+.production-indicator
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+
+  .vue-progress-path
+    height 100px !important
+
+  .title
+    font-size 1.4em
+
+  .info
+    color rgba(black, .7)
+
+  &.danger
+    .vue-progress-path .progress
+      stroke red

@@ -1,0 +1,70 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Blue Socks",
+      "price": 2.99,
+      "originalPrice": 3.99,
+      "rating": 4.3,
+      "img": "http://lorempixel.com/400/400/abstract/1/"
+    },
+    {
+      "id": 2,
+      "title": "Green Socks",
+      "price": 3.99,
+      "rating": 3.9,
+      "img": "http://lorempixel.com/400/400/abstract/2/"
+    },
+    {
+      "id": 3,
+      "title": "Red Socks",
+      "price": 3.99,
+      "rating": 4,
+      "img": "http://lorempixel.com/400/400/abstract/3/"
+    },
+    {
+      "id": 4,
+      "title": "Blue Shirt",
+      "price": 16.99,
+      "originalPrice": 19.99,
+      "rating": 3.4,
+      "img": "http://lorempixel.com/400/400/abstract/4/"
+    },
+    {
+      "id": 5,
+      "title": "Green Shirt",
+      "price": 19.99,
+      "rating": 4.2,
+      "img": "http://lorempixel.com/400/400/abstract/5/"
+    },
+    {
+      "id": 6,
+      "title": "Red Shirt",
+      "price": 19.99,
+      "rating": 4.1,
+      "img": "http://lorempixel.com/400/400/abstract/6/"
+    },
+    {
+      "id": 7,
+      "title": "Grey Shirt",
+      "price": 6.99,
+      "originalPrice": 19.99,
+      "rating": 2.6,
+      "img": "http://lorempixel.com/400/400/abstract/7/"
+    },
+    {
+      "id": 8,
+      "title": "Black Backpack",
+      "price": 39.99,
+      "rating": 4.7,
+      "img": "http://lorempixel.com/400/400/abstract/8/"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "text": "This is awesome!",
+      "itemId": 1
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.zoom-enter-active,
+.zoom-leave-active {
+  transition: opacity .3s, transform .3s;
+}
+
+.zoom-enter,
+.zoom-leave-to {
+  opacity: 0;
+  transform: scale(.7);
+}
+
+/* Hand */
+
+.hand-enter-active,
+.hand-leave-active {
+  transition: opacity .5s;
+}
+
+.hand-enter,
+.hand-leave-to {
+  opacity: 0;
+}
+
+.hand-enter-active .wrapper,
+.hand-leave-active .wrapper {
+  transition: transform .8s cubic-bezier(.08,.74,.34,1);
+  transform-origin: bottom center;
+}
+
+.hand-enter .wrapper,
+.hand-leave-to .wrapper {
+  transform: rotateX(90deg);
+}
+
+.hand-enter-active .card,
+.hand-leave-active .card {
+  transition: margin .8s cubic-bezier(.08,.74,.34,1);
+}
+
+.hand-enter .card,
+.hand-leave-to .card {
+  margin: 0 -100px;
+}
+
+/* Card */
+
+.card {
+  /* Used for enter, move and mouse over animations */
+  transition: all .3s;
+}
+
+.card-enter {
+  opacity: 0;
+  /* Slide from the right */
+  transform: scale(.8) translateX(100px);
+}
+
+.card-leave-active {
+  /* We need different timings for the leave transition */
+  transition: all 1s, opacity .5s .5s;
+  /* Keep it in the same horizontal position */
+  position: absolute !important;
+  /* Make it painted over the other cards */
+  z-index: 10;
+  /* Unclickable during the transition */
+  pointer-events: none;
+}
+
+.card-leave-to {
+  opacity: 0;
+  /* Zoom the card upwards */
+  transform: translateX(-106px) translateY(-300px) scale(1.5);
+}
