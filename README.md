@@ -26,6 +26,3 @@ To follow this book, you will only need a text or code editor (Visual Studio Cod
 * [Web development with Vue.js 2 [Video]](https://www.packtpub.com/web-development/web-development-vuejs-2-video?utm_source=github&utm_medium=repository&utm_campaign=9781788395298)
 
 * [The Ultimate Vue JS 2 Developers Course [Video]](https://www.packtpub.com/application-development/ultimate-vue-js-2-developers-course-video?utm_source=github&utm_medium=repository&utm_campaign=9781788394086)
-
-### Suggestions and Feedback
-[Click here](https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform) if you have any feedback or suggestions.
